@@ -11,6 +11,7 @@ public class PrjF1G8Main {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
+            System.out.println();
             System.out.println("============================");
             System.out.println("===CABINET STORAGE SYSTEM===");
             System.out.println("============================");
@@ -43,7 +44,7 @@ public class PrjF1G8Main {
     }
 
     public static void addStorageBox(Scanner sc) {
-        if (PrjF1G8Storage.count >= MAX_BOXES) {
+        if (PrjF1G8Storage.count >= MAX_BOXES || TotalUsedCapacity == TOTAL_CABINET_CAPACITY) {
             System.out.println("Cabinet is full!");
             return;
         }
